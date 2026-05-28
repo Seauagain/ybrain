@@ -11,6 +11,20 @@ memory/       # Reusable memory templates
 templates/    # Project config templates (e.g., CLAUDE.md)
 ```
 
+## Skills Attribution
+
+Most skills in this repo are sourced from:
+
+- **[obra/superpowers](https://github.com/obra/superpowers)** - An agentic skills framework & software development methodology
+  - `brainstorming`, `dispatching-parallel-agents`, `executing-plans`, `finishing-a-development-branch`
+  - `receiving-code-review`, `requesting-code-review`, `subagent-driven-development`, `systematic-debugging`
+  - `test-driven-development`, `using-git-worktrees`, `using-superpowers`, `verification-before-completion`
+  - `writing-plans`, `writing-skills`
+
+Custom skills developed for this repo:
+
+- `feishu` - Lark/Feishu operations via lark-cli
+
 ## Commit Convention
 
 Every commit that adds or modifies a skill, hook, or template **must** follow this format:

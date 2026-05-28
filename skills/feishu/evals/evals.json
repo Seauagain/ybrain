@@ -1,0 +1,23 @@
+{
+  "skill_name": "feishu",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我读取这个飞书文档的内容：https://dptechnology.feishu.cn/docx/FgsPd99gDoAaWkxNhUzcFnfdnzC 然后给我一个简短的摘要，重点是关于 lark-cli 的基础用法部分。",
+      "expected_output": "Successfully fetches the Feishu document using lark-cli docs +fetch with --api-version v2, extracts content, and provides a concise summary focusing on the lark-cli basic usage section (the 5 core commands table and installation steps).",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "我需要把下面这段内容发到飞书，标题叫「lark-cli 测试文档」：\n\n# 测试内容\n\n这是一个测试文档，用来验证 lark-cli 的创建功能。\n\n## 功能列表\n\n- 读取消息\n- 读取文档\n- 创建文档\n- 读取妙记\n\n完成后把飞书文档的链接给我。",
+      "expected_output": "Creates a new Feishu document using lark-cli docs +create with --api-version v2, --title \"lark-cli 测试文档\", and the provided markdown content. Returns the document URL to the user.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "搜索一下我最近飞书里关于 'hackathon' 的消息，看看有哪些重要的讨论。如果找到了，帮我整理成一个简短的列表。",
+      "expected_output": "Uses lark-cli im +messages-search with query parameter 'hackathon', retrieves search results, and organizes them into a concise list showing key discussions (sender, timestamp, message preview). Handles the case where no results are found gracefully.",
+      "files": []
+    }
+  ]
+}
